@@ -20,9 +20,9 @@ namespace Phoneword
                     newNumber.Append(letra);
                 else
                 {
-                    var result = TranslaterToNumber(letra);
+                    var result = TranslateToNumber(letra);
                     if (result != null)
-                        newNumer.Append(result);
+                        newNumber.Append(result);
                     else
                         return null;
                 }
@@ -36,7 +36,7 @@ namespace Phoneword
         }
 
         static readonly string[] digits = {
-        "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ"
+        "ABC", "DEF", "GHI", "JKL", "MNÑO", "PQRS", "TUV", "WXYZ"
         };
 
         static int? TranslateToNumber(char c)
